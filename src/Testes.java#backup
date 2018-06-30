@@ -1,0 +1,220 @@
+
+/**
+ * Escreva a descrição da classe Testes aqui.
+ * 
+ * @author (seu nome) 
+ * @version (número de versão ou data)
+ */
+import java.util.Map;
+import java.io.*;
+import java.util.*;
+import java.time.LocalDate;
+import java.io.Serializable;
+public class Testes implements Serializable{
+   public static void main(String[] args) {
+       Cabeleireiros f1 = new Cabeleireiros(0,"1","567486435","efg", LocalDate.of(2014,5,23),"534575312","w","Cabeleireiros",25);
+       Cabeleireiros f2 = new Cabeleireiros(0,"2","345534422","efg", LocalDate.of(2014,6,22),"523443112","w","Cabeleireiros",45);
+       Cabeleireiros f3 = new Cabeleireiros(0,"3","335463257","efg", LocalDate.of(2014,2,13),"442367890","w","Cabeleireiros",60);
+       Cabeleireiros f4 = new Cabeleireiros(0,"4","245463221","efg", LocalDate.of(2014,3,23),"265443787","w","Cabeleireiros",10);       
+       Cabeleireiros f5 = new Cabeleireiros(0,"5","974567323","efg", LocalDate.of(2014,12,3),"552345232","w","Cabeleireiros",25);
+       DespesasGerais f6 = new DespesasGerais(0,"6","234433244","gfe", LocalDate.of(2014,6,2),"234424673","e","DespesasGerais",150);
+       DespesasGerais f7 = new DespesasGerais(0,"7","244589766","gfe", LocalDate.of(2014,1,14),"225567457","e","DespesasGerais",10);
+       DespesasGerais f8 = new DespesasGerais(0,"8","134115780","gfe", LocalDate.of(2014,11,11),"990786432","e","DespesasGerais",1050);
+       DespesasGerais f9 = new DespesasGerais(0,"9","066343432","gfe", LocalDate.of(2014,2,28),"234567851","e","DespesasGerais",2500);
+       DespesasGerais f10 = new DespesasGerais(0,"10","634664323","gfe", LocalDate.of(2014,6,4),"345674756","e","DespesasGerais",50);
+       Lares f11 = new Lares(0,"11","356434522","wew", LocalDate.of(2014,3,16),"776554685","q","Lares",1400);
+       Lares f12 = new Lares(0,"12","343232355","wew", LocalDate.of(2014,1,2),"345645433","q","Lares",400);
+       Lares f13 = new Lares(0,"13","785322346","wew", LocalDate.of(2014,7,6),"356990787","q","Lares",600);
+       Lares f14 = new Lares(0,"14","970680365","wew", LocalDate.of(2014,8,31),"980756888","q","Lares",1500);
+       Lares f15 = new Lares(0,"15","890764345","wew", LocalDate.of(2014,9,22),"355677343","q","Lares",2500);
+       PassesMensais f16 = new PassesMensais(0,"16","908564245","rtr", LocalDate.of(2014,4,9),"366756789","r","PassesMensais",90);
+       PassesMensais f17 = new PassesMensais(0,"17","234676458","rtr", LocalDate.of(2014,6,6),"123486950","r","PassesMensais",15);
+       PassesMensais f18 = new PassesMensais(0,"18","123232355","rtr", LocalDate.of(2014,3,25),"102356756","r","PassesMensais",10);
+       PassesMensais f19 = new PassesMensais(0,"19","976436888","rtr", LocalDate.of(2014,3,12),"453367801","r","PassesMensais",30);
+       PassesMensais f20 = new PassesMensais(0,"20","565244567","rtr", LocalDate.of(2014,12,1),"274789954","r","PassesMensais",20);
+       ReparaçãoMotociclos f21 = new ReparaçãoMotociclos(0,"21","234387545","www", LocalDate.of(2014,9,23),"654654767","t","ReparaçãoMotociclos",250);
+       ReparaçãoMotociclos f22 = new ReparaçãoMotociclos(0,"22","745789902","www", LocalDate.of(2014,1,28),"575677835","t","ReparaçãoMotociclos",343);
+       ReparaçãoMotociclos f23 = new ReparaçãoMotociclos(0,"23","366875333","www", LocalDate.of(2014,2,9),"678654354","t","ReparaçãoMotociclos",100);
+       ReparaçãoMotociclos f24 = new ReparaçãoMotociclos(0,"24","256754325","www", LocalDate.of(2014,3,20),"366577689","t","ReparaçãoMotociclos",2500);
+       ReparaçãoMotociclos f25 = new ReparaçãoMotociclos(0,"25","245346567","www", LocalDate.of(2014,3,20),"546547934","t","ReparaçãoMotociclos",400);
+       Habitação f26 = new Habitação(0,"26","343535355","wew", LocalDate.of(2014,8,2),"345643333","q","Habitação",400);
+       Habitação f27 = new Habitação(0,"27","325533346","wew", LocalDate.of(2014,7,2),"354343787","q","Habitação",600);
+       Habitação f28 = new Habitação(0,"28","970668855","wew", LocalDate.of(2014,4,31),"243566455","q","Habitação",1500);
+       Habitação f29 = new Habitação(0,"29","526346736","wew", LocalDate.of(2014,9,2),"245467775","q","Habitação",2500);
+       Habitação f30 = new Habitação(0,"30","547645869","wew", LocalDate.of(2014,2,29),"376788700","q","Habitação",1000);
+       Saúde f31 = new Saúde(0,"31","346552355","wew", LocalDate.of(2014,2,6),"568657088","q","Saúde",600);
+       Saúde f32 = new Saúde(0,"32","568753755","wew", LocalDate.of(2014,3,31),"134534466","q","Saúde",1500);
+       Saúde f33 = new Saúde(0,"33","324234234","wew", LocalDate.of(2014,4,22),"547468686","q","Saúde",2500);
+       Saúde f34 = new Saúde(0,"34","768676434","wew", LocalDate.of(2014,7,3),"343565667","q","Saúde",1600);
+       Saúde f35 = new Saúde(0,"35","574574363","wew", LocalDate.of(2014,8,12),"457356567","q","Saúde",500);
+       ReparaçãoAutomóveis f36 = new ReparaçãoAutomóveis(0,"36","436546776","wew", LocalDate.of(2014,5,22),"345464566","q","ReparaçãoAutomóveis",500);
+       ReparaçãoAutomóveis f37 = new ReparaçãoAutomóveis(0,"37","234254345","wew", LocalDate.of(2014,7,22),"224235667","q","ReparaçãoAutomóveis",3500);
+       ReparaçãoAutomóveis f38 = new ReparaçãoAutomóveis(0,"38","456356345","wew", LocalDate.of(2014,8,22),"235553667","q","ReparaçãoAutomóveis",1500);
+       ReparaçãoAutomóveis f39 = new ReparaçãoAutomóveis(0,"39","656799000","wew", LocalDate.of(2014,9,22),"234234244","q","ReparaçãoAutomóveis",2500);
+       ReparaçãoAutomóveis f40 = new ReparaçãoAutomóveis(0,"40","243556003","wew", LocalDate.of(2014,8,31),"768608009","q","ReparaçãoAutomóveis",1500);
+       AtividadesVeterinárias f41 = new AtividadesVeterinárias(0,"41","354543455","wew", LocalDate.of(2014,9,2),"242367635","q","AtividadesVeterinárias",30);
+       AtividadesVeterinárias f42 = new AtividadesVeterinárias(0,"42","655556546","wew", LocalDate.of(2014,7,7),"675675765","q","AtividadesVeterinárias",10);
+       AtividadesVeterinárias f43 = new AtividadesVeterinárias(0,"43","678678678","wew", LocalDate.of(2014,8,21),"768678687","q","AtividadesVeterinárias",150);
+       AtividadesVeterinárias f44 = new AtividadesVeterinárias(0,"44","890787678","wew", LocalDate.of(2014,9,62),"588978898","q","AtividadesVeterinárias",500);
+       AtividadesVeterinárias f45 = new AtividadesVeterinárias(0,"45","678567687","wew", LocalDate.of(2014,9,62),"675675766","q","AtividadesVeterinárias",50);
+       RestauraçãoAlojamento f46 = new RestauraçãoAlojamento(0,"46","980786700","wew", LocalDate.of(2014,9,62),"666545433","q","RestauraçãoAlojamento",500);
+       RestauraçãoAlojamento f47 = new RestauraçãoAlojamento(0,"47","352423447","wew", LocalDate.of(2014,9,2),"887867567","q","RestauraçãoAlojamento",50);
+       RestauraçãoAlojamento f48 = new RestauraçãoAlojamento(0,"48","785665877","wew", LocalDate.of(2014,7,7),"367867787","q","RestauraçãoAlojamento",1000);
+       RestauraçãoAlojamento f49 = new RestauraçãoAlojamento(0,"49","789789907","wew", LocalDate.of(2014,8,21),"267568786","q","RestauraçãoAlojamento",1545);
+       RestauraçãoAlojamento f50 = new RestauraçãoAlojamento(0,"50","879708907","wew", LocalDate.of(2014,9,62),"563434543","q","LaRestauraçãoAlojamentores",90);
+       Educação f51 = new Educação(0,"51","234214422","wew", LocalDate.of(2014,9,62),"345345523","q","Educação",50);
+       Educação f52 = new Educação(0,"52","231313244","wew", LocalDate.of(2014,9,62),"435432340","q","Educação",500);
+       Educação f53 = new Educação(0,"53","453343545","wew", LocalDate.of(2014,9,62),"545600088","q","Educação",160);
+       Educação f54 = new Educação(0,"54","546466546","wew", LocalDate.of(2014,9,62),"123090744","q","Educação",1100);       
+       Educação f55 = new Educação(0,"55","634435443","wew", LocalDate.of(2014,9,62),"454366640","q","Educação",500);    
+       
+       String[] AgregadoJoao = new String[1];
+       AgregadoJoao[0] = "102356756";
+       String[] AgregadoJosefina = new String[1];
+       AgregadoJosefina[0] = "345464566";
+       String[] AgregadoIana = new String[2];
+       AgregadoIana[0] = "345645433";
+       AgregadoIana[1] = "234424673";
+       String[] AgregadoAndre = new String[2];
+       AgregadoAndre[0] = "366756789";
+       AgregadoAndre[1] = "345645433";
+       String[] AgregadoLara = new String[2];
+       AgregadoLara[0] = "366756789";
+       AgregadoLara[1] = "234424673";       
+       
+       String[] codigos = new String[10];
+       codigos[0] = "1s2wr4";
+       
+       Fatura f = (Fatura) f1;
+       TreeMap<String,Fatura> fa = new TreeMap<String,Fatura>();
+       
+       ContribuintesIndividuais c1 = new ContribuintesIndividuais(fa,"345464566","joao@gmail.pt","Joao Fernandes","Rua da Travessa","joao11",1,AgregadoJoao,2,codigos,1234);
+       ContribuintesIndividuais c2 = new ContribuintesIndividuais(fa,"102356756","josefina@gmail.pt","Josefina Andrade","Rua da Tercena","jose12",1,AgregadoJosefina,5,codigos,11450);
+       ContribuintesIndividuais c3 = new ContribuintesIndividuais(fa,"366756789","iana@hotmail.pt","Iana Gonçalves","Rua da Lameira","iana13",2,AgregadoIana,7,codigos,54);
+       ContribuintesIndividuais c4 = new ContribuintesIndividuais(fa,"234424673","andre@gmail.pt","Andre Silva","Travessa do vale","andre14",2,AgregadoAndre,8,codigos,676);
+       ContribuintesIndividuais c5 = new ContribuintesIndividuais(fa,"345645433","lara@gmail.pt","Lara Afonso","Avenida da liberdade","lara15",2,AgregadoLara,4,codigos,1043);
+       
+       String[] AtividadeNestle = new String[1];
+       AtividadeNestle[0] = "RestauraçãoAlojamento";
+       String[] AtividadePrimavera = new String[1];
+       AgregadoJosefina[0] = "DespesasGerais";
+       String[] AtividadeVerao = new String[2];
+       AtividadeVerao[0] = "Lares";
+       AtividadeVerao[1] = "Saúde";
+       String[] AtividadeInverno = new String[1];
+       atividadeInverno[0] = "Cabeleireiros";
+   
+       String[] AgregadoLara = new String[2];
+       AgregadoLara[0] = "366756789";
+       AgregadoLara[1] = "234424673";
+       
+       ContribuintesColetivos  cc1 = new ContribuintesColetivos(fa,fa,"325324234","nestle@gmail.pt","Nestle","Rua do Carioca","nestle1",array,12,1,54,346);
+       ContribuintesColetivos  cc2 = new ContribuintesColetivos(fa,fa,"245664455","primavera@e2.pt","Primavera","Rua do estadio","primavera2",array,12,1,34,34365);
+       ContribuintesColetivos  cc3 = new ContribuintesColetivos(fa,fa,"345547484","verao@e3.pt","Verao","Sequeira","verao",array,12,1,433,343);
+       ContribuintesColetivos  cc4 = new ContribuintesColetivos(fa,fa,"346344344","inverno@e4.pt","Inverno","Rua 25 de abril","inverno4",array,12,1,44,6343);
+       ContribuintesColetivos  cc5 = new ContribuintesColetivos(fa,fa,"125535345","outono@e5.pt","Outono","Rua do raio","outono5",array,12,1,4,4343);
+   
+       JavaFatura j = new JavaFatura();
+       Contribuinte c = (Contribuinte) c1;
+       Contribuinte cc = (Contribuinte) cc1;
+       
+       try{
+           j.registaContribuinte(cc); System.out.println("Regista");
+           j.registaContribuinte(c);
+       } catch (ContribuinteExistenteException e){
+           System.out.println("Fail");
+       }
+      
+       try{
+            j.login("345","cacacae");  System.out.println("Login");
+       }
+       catch (SemAutorizaçãoException e){
+            System.out.println("Fail");
+       }
+       
+       try{
+           j.registaFatura(f);  System.out.println("Regista fatura");
+        }
+        catch (Exception e){
+            System.out.println("Fail");
+       }
+       
+       j.logout();
+       
+       try{
+            j.login("555","coc2");  System.out.println("Login");
+       }
+       catch (SemAutorizaçãoException e){
+            System.out.println("Fail");
+       }
+       
+       try{
+           j.getFaturas(); System.out.println("get faturas");
+       }
+       catch (FaturaInexistenteException e){
+            System.out.println("Fail");
+        }
+       
+       try{
+          double d = j.deduçãoFiscal(); 
+          System.out.println(d);
+       }
+       catch (FaturaInexistenteException e){
+           System.out.println("Fail");
+       }
+       
+       try{
+           j.associaNatureza(f,"Cabeleireiros"); System.out.println("associa faturas");
+       }
+       catch (Exception e){
+           System.out.println("Fail");
+       }
+       
+       try{
+           j.setNatureza(f,"Lares"); System.out.println("troca faturas");
+       }
+       catch (Exception e){
+          System.out.println("Fail");
+       }
+       
+       j.logout();
+       
+       try{
+            j.login("345","cacacae");  System.out.println("Login");
+       }
+       catch (SemAutorizaçãoException e){
+            System.out.println("Fail");
+       }
+       
+       try{
+           j.getEmitidasValor(); System.out.println("Faturas emitidas empresa");
+       }
+        catch(Exception e){
+             System.out.println("Fail");
+       }
+        
+       try{
+           j.getEmitidasData(); System.out.println("Faturas emitidas empresa por data");
+        }
+        catch(SemAutorizaçãoException e){
+            System.out.println("Fail");
+       }
+       
+       try{
+           double d = j.totalFaturado(LocalDate.of(2014,5,23),LocalDate.of(2014,5,24)); System.out.println("Faturado");
+           System.out.println(d);
+        }
+        catch(SemAutorizaçãoException e){
+           System.out.println("Fail"); 
+        }
+        
+       try{
+           j.topX(1); System.out.println("Topx"); 
+        }
+        catch(ContribuinteException e){
+           System.out.println("Fail");  
+       }
+       
+       j.deduçãoFiscalEmpresa(cc1); System.out.println("Topxx"); 
+    }
+}
