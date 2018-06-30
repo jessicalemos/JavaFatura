@@ -7,6 +7,6 @@ Application, such as the "E-Fatura" platform, which provides all mechanisms for 
 ## Contributors
 Made by:
 
-Ana Ribeiro
-Jéssica Lemos
-Pedro Pinto
+Ana Ribeiro <br />
+Jéssica Lemos <br />
+Pedro Pinto <br />
